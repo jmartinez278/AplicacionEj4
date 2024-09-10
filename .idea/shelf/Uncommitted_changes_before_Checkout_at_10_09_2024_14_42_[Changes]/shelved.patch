@@ -1,0 +1,17 @@
+Index: pruebas_unitarias.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import unittest\r\nfrom main import Geometria\r\n\r\nclass TestGeometria(unittest.TestCase):\r\n\r\n    def setUp(self):\r\n        self.geo = Geometria()\r\n\r\n    def test_area_rectangulo(self):\r\n        self.assertEqual(self.geo.area_rectangulo(5, 3), 15)\r\n        self.assertEqual(self.geo.area_rectangulo(7, 2), 14)\r\n\r\n    def test_perimetro_rectangulo(self):\r\n        self.assertEqual(self.geo.perimetro_rectangulo(5, 3), 16)\r\n        self.assertEqual(self.geo.perimetro_rectangulo(7, 2), 18)\r\n\r\n    def test_area_cuadrado(self):\r\n        self.assertEqual(self.geo.area_cuadrado(4), 16)\r\n        self.assertEqual(self.geo.area_cuadrado(7), 49)\r\n\r\n    def test_perimetro_cuadrado(self):\r\n        self.assertEqual(self.geo.perimetro_cuadrado(4), 16)\r\n        self.assertEqual(self.geo.perimetro_cuadrado(7), 28)\r\n\r\nif __name__ == \"__main__\":\r\n    unittest.main()\r\n
+===================================================================
+diff --git a/pruebas_unitarias.py b/pruebas_unitarias.py
+--- a/pruebas_unitarias.py	
++++ b/pruebas_unitarias.py	
+@@ -19,7 +19,7 @@
+         self.assertEqual(self.geo.area_cuadrado(7), 49)
+ 
+     def test_perimetro_cuadrado(self):
+-        self.assertEqual(self.geo.perimetro_cuadrado(4), 16)
++        self.assertEqual(self.geo.perimetro_cuadrado(4), 16merg)
+         self.assertEqual(self.geo.perimetro_cuadrado(7), 28)
+ 
+ if __name__ == "__main__":

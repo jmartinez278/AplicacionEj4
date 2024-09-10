@@ -1,0 +1,18 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Geometria:\r\n    def area_cuadrado(self, lado):\r\n        return lado * lado\r\n    def area_rectangulo(self, ancho, alto):\r\n        return ancho * alto\r\n    def perimetro_cuadrado(self, lado):\r\n        return 4 * lado\r\n    def perimetro_rectangulo(self, ancho, alto):\r\n        return 2 * (ancho + alto)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 3debcead7be1ba8e2a4d9c69b265e187b5c21af6)
++++ b/main.py	(date 1725997393386)
+@@ -6,4 +6,4 @@
+     def perimetro_cuadrado(self, lado):
+         return 4 * lado
+     def perimetro_rectangulo(self, ancho, alto):
+-        return 2 * (ancho + alto)
+\ No newline at end of file
++        return 2 * (ancho + alto)git
+\ No newline at end of file

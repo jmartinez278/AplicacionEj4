@@ -1,0 +1,33 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Geometria:\r\n    def area_rectangulo(self, ancho: float, alto: float) -> float:\r\n        return ancho * alto\r\n\r\n    def perimetro_rectangulo(self, ancho: float, alto: float) -> float:\r\n        return 2 * (ancho + alto)\r\n\r\n    def area_cuadrado(self, lado: float) -> float:\r\n        # Un cuadrado es un rectángulo con ambos lados iguales\r\n        return self.area_rectangulo(lado, lado)\r\n\r\n    def perimetro_cuadrado(self, lado: float) -> float:\r\n        # Un cuadrado es un rectángulo con ambos lados iguales\r\n        return self.perimetro_rectangulo(lado, lado)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 0ee6153cd80fbc62c4a02baef0db3c3533183516)
++++ b/main.py	(date 1725997414457)
+@@ -1,14 +1,9 @@
+ class Geometria:
+-    def area_rectangulo(self, ancho: float, alto: float) -> float:
++    def area_cuadrado(self, lado):
++        return lado * lado
++    def area_rectangulo(self, ancho, alto):
+         return ancho * alto
+-
+-    def perimetro_rectangulo(self, ancho: float, alto: float) -> float:
+-        return 2 * (ancho + alto)
+-
+-    def area_cuadrado(self, lado: float) -> float:
+-        # Un cuadrado es un rectángulo con ambos lados iguales
+-        return self.area_rectangulo(lado, lado)
+-
+-    def perimetro_cuadrado(self, lado: float) -> float:
+-        # Un cuadrado es un rectángulo con ambos lados iguales
+-        return self.perimetro_rectangulo(lado, lado)
++    def perimetro_cuadrado(self, lado):
++        return 4 * lado
++    def perimetro_rectangulo(self, ancho, alto):
++        return 2 * (ancho + alto)
+\ No newline at end of file
